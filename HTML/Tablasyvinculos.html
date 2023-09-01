@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabkas y Vinculos</title>
+    <title>Tablas y Vinculos</title>
 </head>
 <body>
     <h1>Tablas</h1>
@@ -30,10 +30,8 @@
             <td>Cuyo</td>
             <td>Hormiga</td>
         </tr>
-        
-    
-
     </table>
+
     <br>
     <br>
     <caption>Esta es una tabla con sugerencias de alimentos saludables</caption>
@@ -70,7 +68,10 @@
     <h2>Las Cinco Mejores Pastas De Dientes (Estudio Cientifico)</h2>
     
     <p>
-        Muchas personas se preguntan cuál es la mejor pasta de dientes para mantener una salud bucodental adecuada. En el mercado existen múltiples marcas y productos para este fin, por lo que a veces puede ser un poco complicado elegir correctamente entre tanta oferta.
+        Muchas personas se preguntan cuál es la mejor pasta de dientes para <br>
+        mantener una salud bucodental adecuada. En el mercado existen múltiples<br>
+         marcas y productos para este fin, por lo que <br>
+        a veces puede ser un poco complicado elegir correctamente entre tanta oferta.
 
 Además, no es fácil encontrar el dentrífico adecuado entre tantas características posibles: antisarro, blanqueantes, antisensibilidad, protección total, tres en uno...
 
@@ -91,13 +92,83 @@ Estas dudas son normales y acaban por confundirnos como consumidores. Al final, 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste fugiat voluptates laboriosam sapiente id, mollitia sequi soluta molestias incidunt nisi illo! Vel quia animi excepturi libero hic, soluta dolore.</p>
 <h2>Vinculo de Descarga</h2>
  <h2>Vinculo de descarga</h2>
-    <a href="./assets/manual-de-higiene-bucal.pdf"></a> descarga este PDF></a>
+    <a href="./assets/manual-de-higiene-bucal.pdf" download="manual-de-higiene-bucal">descarga este PDF</a>
 
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h1>Formularios</h1>
+<form action="procesar_fomrulario" method="post">Formulario consultorio dental</form>
+<!--Se utiliza para crear un formulario en HTML que permite a los usuarios ingresr y enviar datos-->
+<h3>Etiqueta input</h3>
+<!--Se utliza para crear campos de entrada en un formulario-->
+<input type="text" name="Usuario" placeholder="Usuario">
+<!--type;define el tipo de entrada (texto, correo, contrasenia, etc)-->
+<!--name; es el nombre del campo, utilizado para identificar el dato cuando se envia el 
+formulario-->
+<!--Proporciona un texto ejemplo dentro del dato de entrada-->
+<br>
+<h3>Etiqueta label</h3>
+<!--Se utiliza para etiquetar un elemento de entrada en un formulario, mejora la accesibilidad y la experiencia
+del usuario-->
+<label for="usuario">Usuario</label>
+<input type="text" id="Usuario" name="Usuario">
+<br>
+<br>
+<h3>Etiqueta boton</h3>
+<!--Se utiliza para crear botones en un formulario-->
+<button type="submit"></button>
+<button type="reset">Reestablecer</button>
+<!--type; define el tipo de boto(submit,reset,button, etc)-->
+<!--name; es el nombre del boton, utilizado para identifica el boton
+     cuando se envio el formulario-->
+<br>
+<br>
+<h3>Etiqueta área de texto</h3>
+<!--Se utiliza para crer areas de texto en formulario-->
+<textarea name="comentario" id="comentario" cols="50" rows="5"></textarea>
+<br>
+<br>
+<h3>Etiqueta select</h3>
+<br>
+<br>
+<h1>Tipos de entrada</h1>
+<!--Permite a los usuarios ingresar diferentes tipos de datos en un formulario-->
+<h4>Enviar (submit)</h4>
+<!--Crea un boton que cuando hace click, envia el formulario a una ubicacion especifica-->
+<form action="/procesar_formulario" method="post">
+    <input type="submit" value="Enviar">  
+</form>
+<br>
+<h4>Numero(number)</h4>
+<!--Crear un campo de entrada para que el usuario ingrese numeros-->
+<input type="number" name="Numero">
+<br>
+<h4>Contrasenia (pasword)</h4>
+<!--Creae un campo para que el usuario genere su contrasenia-->
+<input type="password" name="Contrasenia">
+<br>
+<h4>Correo(email)</h4>
+<!--Crear un campo de entrada para que el usuario ingrese su correo-->
+<input type="email" name="Correo">
+<br>
+<h4>Fecha (date)</h4>
+<!--Crea un campo de entrada que permite al usuario crear una cita-->
+<input type="date" name="Fecha">
+<br>
+<h4>Fecha (time)</h4>
+<!--Permite al usuario elegir una hora-->
+<input type="time" name="Hora">
+<br>
+<h4>Telefono (tel)</h4>
+<!--Permite al usuario poner su numero de telefono-->
+<input type="tel" name="Telefono">
+<br>
+<h4>Archivo (file)</h4>
+<!--Permote al usuario subir un archivo-->
+<input type="file" name="Archivo">
 
-
-
-    
-
-    
 </body>
 </html>
